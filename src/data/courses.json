@@ -1,0 +1,46 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Introdução à Programação",
+      "descricao": "Um curso introdutório para iniciantes em programação",
+      "data_inicio": "2024-03-15",
+      "data_termino": "2024-05-15",
+      "videos": [
+        {
+          "id": 1,
+          "titulo": "Aula 1: Conceitos Básicos",
+          "duracao": "00:20:00",
+          "tamanho": "100MB"
+        },
+        {
+          "id": 2,
+          "titulo": "Aula 2: Estruturas de Controle",
+          "duracao": "00:25:00",
+          "tamanho": "120MB"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Desenvolvimento Web Avançado",
+      "descricao": "Um curso avançado sobre desenvolvimento web",
+      "data_inicio": "2024-04-10",
+      "data_termino": "2024-06-10",
+      "videos": [
+        {
+          "id": 3,
+          "titulo": "Aula 1: Frameworks Front-end",
+          "duracao": "00:30:00",
+          "tamanho": "150MB"
+        },
+        {
+          "id": 4,
+          "titulo": "Aula 2: Banco de Dados NoSQL",
+          "duracao": "00:35:00",
+          "tamanho": "180MB"
+        }
+      ]
+    }
+  ]
+}

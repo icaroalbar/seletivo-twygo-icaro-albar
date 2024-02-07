@@ -16,7 +16,9 @@ export function Nav(): ReactElement {
               setTheme(theme === "light" ? "dark" : "light")
             }
           />
-          <p className="text-sm text-muted-foreground capitalize">usuário</p>
+          <p className="text-sm text-muted-foreground capitalize hidden md:flex">
+            usuário
+          </p>
           <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
             <AvatarFallback>CN</AvatarFallback>
