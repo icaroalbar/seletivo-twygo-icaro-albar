@@ -1,44 +1,46 @@
 {
-  "cursos": [
+  "courses": [
     {
       "id": 1,
-      "titulo": "Introdução à Programação",
-      "descricao": "Um curso introdutório para iniciantes em programação",
-      "data_inicio": "2024-03-15",
-      "data_termino": "2024-05-15",
+      "title": "Introdução à Programação",
+      "description": "Um curso introdutório para iniciantes em programação",
+      "start_date": "2024-03-15",
+      "end_date": "2024-05-15",
+      "status": "Não iniciado",
       "videos": [
         {
           "id": 1,
-          "titulo": "Aula 1: Conceitos Básicos",
-          "duracao": "00:20:00",
-          "tamanho": "100MB"
+          "title": "Aula 1: Conceitos Básicos",
+          "duration": "00:20:00",
+          "status": "Não iniciado"
         },
         {
           "id": 2,
-          "titulo": "Aula 2: Estruturas de Controle",
-          "duracao": "00:25:00",
-          "tamanho": "120MB"
+          "title": "Aula 2: Estruturas de Controle",
+          "duration": "00:25:00",
+          "status": "Não iniciado"
         }
       ]
     },
     {
       "id": 2,
-      "titulo": "Desenvolvimento Web Avançado",
-      "descricao": "Um curso avançado sobre desenvolvimento web",
-      "data_inicio": "2024-04-10",
-      "data_termino": "2024-06-10",
+      "title": "Desenvolvimento Web Avançado",
+      "description": "Um curso avançado sobre desenvolvimento web",
+      "start_date": "2024-04-10",
+      "end_date": "2024-06-10",
+      "status": "Não iniciado",
       "videos": [
         {
           "id": 3,
-          "titulo": "Aula 1: Frameworks Front-end",
-          "duracao": "00:30:00",
-          "tamanho": "150MB"
+          "title": "Aula 1: Frameworks Front-end",
+          "duration": "00:30:00",
+          "status": "Não iniciado"
         },
         {
           "id": 4,
-          "titulo": "Aula 2: Banco de Dados NoSQL",
-          "duracao": "00:35:00",
-          "tamanho": "180MB"
+          "title": "Aula 2: Banco de Dados NoSQL",
+          "duration": "00:35:00",
+          "status": "Não iniciado"
         }
       ]
     }
