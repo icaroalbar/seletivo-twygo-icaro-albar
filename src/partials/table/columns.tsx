@@ -1,6 +1,8 @@
 "use client";
 
-import { ColumnDef } from "@tanstack/react-table";
+import { formatDate } from "../../lib/utils";
+import { Badge } from "../../components/ui/badge";
+import { ColumnDef, Row } from "@tanstack/react-table";
 
 export type Videos = {
   id: number;
@@ -11,11 +13,11 @@ export type Videos = {
 
 export type Courses = {
   id: 1;
-  title: "Introdução à Programação";
-  descricao: "Um curso introdutório para iniciantes em programação";
-  start_date: "2024-03-15";
-  end_date: "2024-05-15";
-  status: "Não iniciado" | "em andamento" | "concluída";
+  title: string;
+  descricao: string;
+  start_date: string;
+  end_date: string;
+  status: "Não iniciado" | "Em andamento" | "Concluída";
   videos: Videos[];
 };
 
@@ -31,13 +33,40 @@ export const columns: ColumnDef<Courses>[] = [
   {
     accessorKey: "start_date",
     header: "Data de início",
+    cell: ({ row }: { row: Row<Courses> }) => {
+      const status: string = row.original.status;
+      return (
+        <span>
+          {status === "Não iniciado"
+            ? "-"
+            : formatDate(row.original.start_date)}
+        </span>
+      );
+    },
   },
   {
     accessorKey: "status",
     header: "Status",
+    cell: ({ row }: { row: Row<Courses> }) => {
+      const status = row.original.status;
+      let variant: any = "default";
+
+      if (status === "Não iniciado") variant = "destructive";
+      if (status === "Em andamento") variant = "secondary";
+
+      return <Badge variant={variant}>{status}</Badge>;
+    },
   },
   {
     accessorKey: "end_date",
     header: "Data de conclusão",
+    cell: ({ row }: { row: Row<Courses> }) => {
+      const status: string = row.original.status;
+      return (
+        <span>
+          {status === "Concluído" ? formatDate(row.original.end_date) : "-"}
+        </span>
+      );
+    },
   },
 ];
