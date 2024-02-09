@@ -1,17 +1,5 @@
 import { useFetch } from "./hooks/useFetch";
-import { Link } from "react-router-dom";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./components/ui/card";
-import { Slider } from "./components/ui/slider";
-import { Badge } from "./components/ui/badge";
-import Icon from "./components/icons";
-import { formatDate } from "./lib/utils";
+import Sidebar from "./partials/Sidebar";
 
 export default function Course(): JSX.Element {
   const { data, error } = useFetch("courses");
@@ -20,6 +8,9 @@ export default function Course(): JSX.Element {
   if (!data) return <div>Carregando...</div>;
 
   return (
-    
+    <div className="flex justify-between">
+      <div className="flex-grow">01</div>
+      <Sidebar />
+    </div>
   );
 }
