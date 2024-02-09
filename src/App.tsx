@@ -38,9 +38,12 @@ export default function App(): JSX.Element {
                   backgroundImage: `url('${item.image}')`,
                 }}
               >
-                <div className="text-transparent hover:text-white flex justify-center items-center transition-colors hover:bg-zinc-700/50 w-full min-h-32">
+                <Link
+                  to={`/course/${item.id}`}
+                  className="text-transparent hover:text-white flex justify-center items-center transition-colors hover:bg-zinc-700/50 w-full min-h-32"
+                >
                   <Icon name="PlayCircle" size={60} className="opacity-80" />
-                </div>
+                </Link>
               </Link>
               <div className="p-5">
                 <CardTitle>{item.title}</CardTitle>

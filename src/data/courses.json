@@ -12,13 +12,13 @@
       "videos": [
         {
           "id": 1,
-          "title": "Aula 1: Conceitos Básicos",
+          "title": "Conceitos Básicos",
           "duration": "00:20:00",
           "status": "Não iniciado"
         },
         {
           "id": 2,
-          "title": "Aula 2: Estruturas de Controle",
+          "title": "Estruturas de Controle",
           "duration": "00:25:00",
           "status": "Não iniciado"
         }
@@ -36,13 +36,13 @@
       "videos": [
         {
           "id": 3,
-          "title": "Aula 1: Frameworks Front-end",
+          "title": "Frameworks Front-end",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 4,
-          "title": "Aula 2: Banco de Dados NoSQL",
+          "title": "Banco de Dados NoSQL",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
@@ -60,13 +60,13 @@
       "videos": [
         {
           "id": 5,
-          "title": "Aula 1: Frameworks Front-end",
+          "title": "Frameworks Front-end",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 6,
-          "title": "Aula 2: Banco de Dados NoSQL",
+          "title": "Banco de Dados NoSQL",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
@@ -84,13 +84,13 @@
       "videos": [
         {
           "id": 7,
-          "title": "Aula 1: Frameworks Front-end",
+          "title": "Frameworks Front-end",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 8,
-          "title": "Aula 2: Banco de Dados NoSQL",
+          "title": "Banco de Dados NoSQL",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
@@ -108,13 +108,13 @@
       "videos": [
         {
           "id": 9,
-          "title": "Aula 1: Conceitos Básicos",
+          "title": "Conceitos Básicos",
           "duration": "00:20:00",
           "status": "Não iniciado"
         },
         {
           "id": 10,
-          "title": "Aula 2: Estruturas de Controle",
+          "title": "Estruturas de Controle",
           "duration": "00:25:00",
           "status": "Não iniciado"
         }
@@ -132,13 +132,13 @@
       "videos": [
         {
           "id": 11,
-          "title": "Aula 1: Frameworks Front-end",
+          "title": "Frameworks Front-end",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 12,
-          "title": "Aula 2: Banco de Dados NoSQL",
+          "title": "Banco de Dados NoSQL",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
@@ -156,13 +156,13 @@
       "videos": [
         {
           "id": 13,
-          "title": "Aula 1: Frameworks Front-end",
+          "title": "Frameworks Front-end",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 14,
-          "title": "Aula 2: Banco de Dados NoSQL",
+          "title": "Banco de Dados NoSQL",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
@@ -180,13 +180,13 @@
       "videos": [
         {
           "id": 15,
-          "title": "Aula 1: Frameworks Front-end",
+          "title": "Frameworks Front-end",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 16,
-          "title": "Aula 2: Banco de Dados NoSQL",
+          "title": "Banco de Dados NoSQL",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
