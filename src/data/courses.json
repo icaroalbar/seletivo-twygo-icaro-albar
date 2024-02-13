@@ -164,7 +164,7 @@
           "id": 3,
           "title": "Push Notifications",
           "duration": "00:35:00",
-          "status": "Não iniciado"
+          "status": "Estoque"
         }
       ]
     },
@@ -193,6 +193,36 @@
         {
           "id": 3,
           "title": "Javascript",
+          "duration": "00:35:00",
+          "status": "Não iniciado"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Formação em Inteligência Artificial",
+      "category": "Tecnologia",
+      "description": "Domine a tecnologia do futuro, aprenda a usar em programação e desenvolva sua própria IA na prática, dos fundamentos a criação de produtos.",
+      "start_date": "2024-04-10",
+      "end_date": "2024-06-10",
+      "image": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg",
+      "status": "Estoque",
+      "videos": [
+        {
+          "id": 1,
+          "title": "Introdução",
+          "duration": "00:30:00",
+          "status": "Não iniciado"
+        },
+        {
+          "id": 2,
+          "title": " Estatística para Devs",
+          "duration": "00:35:00",
+          "status": "Não iniciado"
+        },
+        {
+          "id": 3,
+          "title": "Análise exploratória de dados com pandas",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }

@@ -9,16 +9,13 @@ export function AddCourse({ courseId }: { courseId: string }): JSX.Element {
   const handleStatusUpdate = async () => {
     setDisable(true);
     try {
-      // Faz uma requisição GET para obter os detalhes do curso específico
       const response = await axios.get(
         `http://localhost:4000/courses/${courseId}`,
       );
       const course = response.data;
 
-      // Atualiza o status do curso para "Não Iniciado"
       const updatedCourse = { ...course, status: "Não Iniciado" };
 
-      // Faz uma requisição PUT para atualizar os detalhes do curso
       await axios.put(
         `http://localhost:4000/courses/${courseId}`,
         updatedCourse,
