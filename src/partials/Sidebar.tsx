@@ -16,7 +16,7 @@ export default function Sidebar() {
   return (
     <aside
       className={`z-50 flex flex-col bg-secondary drop-shadow transition-width duration-500 ease-in-out sm:translate-x-0 ${
-        hidden ? "w-1/4 overflow-y-scroll" : "w-0"
+        hidden ? "w-2/4 overflow-y-scroll" : "w-0"
       }`}
       aria-label="Sidebar"
     >
