@@ -7,7 +7,7 @@ export function Router(): JSX.Element {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/course/:id/video" element={<Course />} />
+        <Route path="/course/:id" element={<Course />} />
       </Routes>
     </BrowserRouter>
   );

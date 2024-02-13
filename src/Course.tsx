@@ -11,10 +11,10 @@ export default function Course(): JSX.Element {
   const { data, error } = useFetch("courses");
   const { id } = useParams();
 
-  const course = data.find((item: any) => item.id === id);
-
-  if (error) return <div>Erro ao buscar dados.</div>;
   if (!data) return <div>Carregando...</div>;
+  if (error) return <div>Erro ao buscar dados.</div>;
+
+  const course = data.find((item: any) => item.id === id);
 
   return (
     <div className="flex justify-between h-screen">
@@ -31,7 +31,7 @@ export default function Course(): JSX.Element {
         <h3 className="scroll-m-20 mb-5 text-2xl font-semibold tracking-tight">
           {course.title}
         </h3>
-        <Video id="OyTN-MF-OEg" />
+        <Video />
         <Card className="dark:bg-secondary bg-white p-8">
           <CardTitle className="mb-3">Descrição</CardTitle>
           <CardDescription>{course.description}</CardDescription>

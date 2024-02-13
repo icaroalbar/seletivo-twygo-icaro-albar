@@ -12,6 +12,7 @@ import { Slider } from "./components/ui/slider";
 import { Badge } from "./components/ui/badge";
 import Icon from "./components/icons";
 import { formatDate } from "./lib/utils";
+import { Button } from "./components/ui/button";
 
 export default function App(): JSX.Element {
   const { data, error } = useFetch("courses");
@@ -19,20 +20,28 @@ export default function App(): JSX.Element {
   if (error) return <div>Erro ao buscar dados.</div>;
   if (!data) return <div>Carregando...</div>;
 
+  const filteredData = data.filter((item: any) => item.status !== "Estoque");
+
   return (
     <div className="py-10 space-y-5">
-      <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight container">
-        Meus cursos
-      </h3>
+      <div className="flex justify-around mx-10 items-center">
+        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight container">
+          Meus cursos
+        </h3>
+        <Button variant={"default"} className="space-x-2">
+          <Icon name="Plus" size={18} />
+          <span>Adiocionar curso</span>
+        </Button>
+      </div>
       <div className="grid grid-cols-4 gap-3 justify-between container">
-        {data.map((item: any) => (
+        {filteredData.map((item: any) => (
           <Card
             className="border-none rounded-none col-span-4 md:col-span-2 lg:col-span-1 dark:bg-secondary bg-white"
             key={item.id}
           >
             <CardHeader className="p-0">
               <Link
-                to={`/course/${item.id}/video`}
+                to={`/course/${item.id}`}
                 className="bg-cover w-full min-h-32 text-transparent hover:text-white flex justify-center items-center transition-colors"
                 style={{
                   backgroundImage: `url('${item.image}')`,
