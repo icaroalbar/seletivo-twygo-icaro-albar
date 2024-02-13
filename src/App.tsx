@@ -8,11 +8,21 @@ import {
   CardHeader,
   CardTitle,
 } from "./components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./components/ui/dialog";
+import { Alert, AlertDescription, AlertTitle } from "./components/ui/alert";
 import { Slider } from "./components/ui/slider";
 import { Badge } from "./components/ui/badge";
 import Icon from "./components/icons";
 import { formatDate } from "./lib/utils";
 import { Button } from "./components/ui/button";
+import { AddCourse } from "./partials/AddCourse";
 
 export default function App(): JSX.Element {
   const { data, error } = useFetch("courses");
@@ -21,6 +31,7 @@ export default function App(): JSX.Element {
   if (!data) return <div>Carregando...</div>;
 
   const filteredData = data.filter((item: any) => item.status !== "Estoque");
+  const filterNewCourse = data.filter((item: any) => item.status === "Estoque");
 
   return (
     <div className="py-10 space-y-5">
@@ -28,10 +39,40 @@ export default function App(): JSX.Element {
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight container">
           Meus cursos
         </h3>
-        <Button variant={"default"} className="space-x-2">
-          <Icon name="Plus" size={18} />
-          <span>Adiocionar curso</span>
-        </Button>
+        <Dialog>
+          <DialogTrigger>
+            <Button variant={"default"} className="space-x-2">
+              <Icon name="Plus" size={18} />
+              <span>Adiocionar curso</span>
+            </Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              {filterNewCourse.map((item: any) => (
+                <Alert
+                  className="border-none flex items-start gap-x-4"
+                  key={item.id}
+                >
+                  <img
+                    src={item.image}
+                    alt="Imagem curso"
+                    width={90}
+                    className="mt-1"
+                  />
+                  <div>
+                    <DialogTitle>
+                      <AlertTitle>{item.title}</AlertTitle>
+                    </DialogTitle>
+                    <DialogDescription>
+                      <AlertDescription>{item.description}</AlertDescription>
+                    </DialogDescription>
+                    <AddCourse courseId={item.id} />
+                  </div>
+                </Alert>
+              ))}
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
       <div className="grid grid-cols-4 gap-3 justify-between container">
         {filteredData.map((item: any) => (

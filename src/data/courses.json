@@ -1,7 +1,7 @@
 {
   "courses": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Formação em React",
       "category": "Tecnologia",
       "description": "Aprenda uma das tecnologias mais utilizadas no mercado na prática, do zero ao avançado, construindo interfaces reativas e evolua sua carreira front-end.",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Formação Node JS",
       "category": "Tecnologia",
       "description": "Domine uma linguagem flexível e popular e amplamente utilizada na prática, construindo arquiteturas modernas, eficientes e escaláveis.",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Formação em Python",
       "category": "Tecnologia",
       "description": "Domine uma das linguagens mais buscadas e requisitadas no Brasil e no mundo criando aplicações completas e profissionais.",
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Formação JAVA",
       "category": "Tecnologia",
       "description": "Domine uma das linguagens mais usadas no mundo, do zero ao avançado, desenvolvendo aplicações completas e escaláveis usando Spring Boot.",
@@ -139,90 +139,60 @@
       ]
     },
     {
-      "id": 5,
-      "title": "Formação JAVA",
+      "id": "5",
+      "title": "Formação em React Native",
       "category": "Tecnologia",
-      "description": "Domine uma das linguagens mais usadas no mundo, do zero ao avançado, desenvolvendo aplicações completas e escaláveis usando Spring Boot.",
+      "description": "Aprenda a desenvolver aplicações mobile completas, modernas e reativas para Android e iOS de forma nativa com React Native e evolua sua carreira front-end.",
       "start_date": "2024-04-10",
       "end_date": "2024-06-10",
-      "image": "https://cdn.pixabay.com/photo/2020/09/27/13/15/data-5606639_1280.jpg",
-      "status": "Estoque",
+      "image": "https://cdn.pixabay.com/photo/2012/02/29/12/26/space-19070_1280.jpg",
+      "status": "Não Iniciado",
       "videos": [
         {
           "id": 1,
-          "title": "Fundamentos",
+          "title": "Fundamentos React Native",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 2,
-          "title": "Spring boot",
+          "title": "Component Library",
           "duration": "00:35:00",
           "status": "Não iniciado"
         },
         {
           "id": 3,
-          "title": "Documentação",
+          "title": "Push Notifications",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
       ]
     },
     {
-      "id": 6,
-      "title": "Formação JAVA",
+      "id": "6",
+      "title": "Formação Front end",
       "category": "Tecnologia",
-      "description": "Domine uma das linguagens mais usadas no mundo, do zero ao avançado, desenvolvendo aplicações completas e escaláveis usando Spring Boot.",
+      "description": "Aprenda do zero as principais linguagens web, domine desenvolvimento full stack e conheça tudo que precisa pra iniciar sua carreira e conquistar sua primeira vaga em programação",
       "start_date": "2024-04-10",
       "end_date": "2024-06-10",
-      "image": "https://cdn.pixabay.com/photo/2020/09/27/13/15/data-5606639_1280.jpg",
+      "image": "https://cdn.pixabay.com/photo/2017/10/10/21/49/laptop-2838939_1280.jpg",
       "status": "Estoque",
       "videos": [
         {
           "id": 1,
-          "title": "Fundamentos",
+          "title": "HTML",
           "duration": "00:30:00",
           "status": "Não iniciado"
         },
         {
           "id": 2,
-          "title": "Spring boot",
+          "title": "CSS",
           "duration": "00:35:00",
           "status": "Não iniciado"
         },
         {
           "id": 3,
-          "title": "Documentação",
-          "duration": "00:35:00",
-          "status": "Não iniciado"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Formação JAVA",
-      "category": "Tecnologia",
-      "description": "Domine uma das linguagens mais usadas no mundo, do zero ao avançado, desenvolvendo aplicações completas e escaláveis usando Spring Boot.",
-      "start_date": "2024-04-10",
-      "end_date": "2024-06-10",
-      "image": "https://cdn.pixabay.com/photo/2020/09/27/13/15/data-5606639_1280.jpg",
-      "status": "Estoque",
-      "videos": [
-        {
-          "id": 1,
-          "title": "Fundamentos",
-          "duration": "00:30:00",
-          "status": "Não iniciado"
-        },
-        {
-          "id": 2,
-          "title": "Spring boot",
-          "duration": "00:35:00",
-          "status": "Não iniciado"
-        },
-        {
-          "id": 3,
-          "title": "Documentação",
+          "title": "Javascript",
           "duration": "00:35:00",
           "status": "Não iniciado"
         }
