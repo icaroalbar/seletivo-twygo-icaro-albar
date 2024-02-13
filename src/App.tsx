@@ -32,18 +32,15 @@ export default function App(): JSX.Element {
           >
             <CardHeader className="p-0">
               <Link
-                to={"/"}
-                className={`bg-cover w-full min-h-32`}
+                to={`/course/${item.id}/video`}
+                className="bg-cover w-full min-h-32 text-transparent hover:text-white flex justify-center items-center transition-colors"
                 style={{
                   backgroundImage: `url('${item.image}')`,
                 }}
               >
-                <Link
-                  to={`/course/${item.id}`}
-                  className="text-transparent hover:text-white flex justify-center items-center transition-colors hover:bg-zinc-700/50 w-full min-h-32"
-                >
+                <div className="hover:bg-zinc-700/60 w-full flex justify-center items-center min-h-32">
                   <Icon name="PlayCircle" size={60} className="opacity-80" />
-                </Link>
+                </div>
               </Link>
               <div className="p-5">
                 <CardTitle>{item.title}</CardTitle>

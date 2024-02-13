@@ -7,7 +7,7 @@ import { useFetch } from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
 
 export default function Sidebar() {
-  const [hidden, setHidden] = useState<boolean>(false);
+  const [hidden, setHidden] = useState<boolean>(true);
   const { data } = useFetch("courses");
   const { id } = useParams();
 
